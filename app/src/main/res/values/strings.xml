@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KuValeFitness</string>
+
+    <!-- bmi fragment -->
+    <string name="label_weight">Weight: %s KG</string>
+    <string name="label_height">Height: %s cm</string>
+</resources>
