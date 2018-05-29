@@ -4,47 +4,103 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imgBMI"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
-        android:scaleType="centerInside"
-        android:adjustViewBounds="true"/>
+        android:layout_weight="6">
 
-    <LinearLayout
+        <ImageView
+            android:id="@+id/imgBMI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/bmiCircleRadius"
+            android:paddingBottom="@dimen/bmiCircleRadius"
+            android:layout_gravity="top"
+            android:scaleType="centerInside"
+            android:tint="@android:color/background_light"
+            android:adjustViewBounds="true"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <FrameLayout
+                android:layout_width="@dimen/bmiCircleDiameter"
+                android:layout_height="@dimen/bmiCircleDiameter"
+                android:layout_gravity="center"
+                android:background="@drawable/bmi_circle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light"
+                        android:text="BMI:"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtBmiIndex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light"
+                        android:gravity="center"
+                        android:textSize="26dp"/>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtWeight"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textStyle="bold"
+        android:text="@string/label_weight"/>
 
-        <TextView
-            android:id="@+id/txtWeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/label_weight"/>
+    <SeekBar
+        android:id="@+id/sbWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        style="@style/bmiSeekBar"
+        android:min="40"
+        android:max="200"/>
 
-        <SeekBar
-            android:id="@+id/sbWeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:min="40"
-            android:max="200"/>
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textStyle="bold"
+        android:text="@string/label_height"/>
 
-        <TextView
-            android:id="@+id/txtHeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/label_height"/>
-
-        <SeekBar
-            android:id="@+id/sbHeigth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:min="100"
-            android:max="250"/>
-
-    </LinearLayout>
+    <SeekBar
+        android:id="@+id/sbHeigth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        style="@style/bmiSeekBar"
+        android:min="100"
+        android:max="250"/>
 
 </LinearLayout>

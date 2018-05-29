@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bmiCircleRadius">70dp</dimen>
+    <dimen name="bmiCircleDiameter">140dp</dimen>
+    <dimen name="bmiCircleMargin">8dp</dimen>
+    <dimen name="seekBarThinkness">16dp</dimen>
+    <dimen name="seekBarThumbThickness">24dp</dimen>
+</resources>

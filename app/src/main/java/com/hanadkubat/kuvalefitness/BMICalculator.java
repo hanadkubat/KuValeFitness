@@ -2,7 +2,7 @@ package com.hanadkubat.kuvalefitness;
 
 public class BMICalculator
 {
-    public static enum BMIClass
+    public enum BMIClass
     {
         Underweight,
         Normal,

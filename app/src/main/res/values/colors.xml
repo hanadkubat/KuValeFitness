@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!-- bmi frament -->
+    <color name="colorBMICircleBackground">#333333</color>
+    <color name="colorBMIUnderweight">#a9dcd7</color>
+    <color name="colorBMINormal">#9ee559</color>
+    <color name="colorBMIOverweight">#fffbaa</color>
+    <color name="colorBMIObese1">#fedb00</color>
+    <color name="colorBMIObese2">#f29037</color>
+    <color name="colorBMIObese3">#f17983</color>
 </resources>

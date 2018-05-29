@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="bmiSeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_background</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+        <item name="android:splitTrack">false</item>
+    </style>
+
 </resources>
+
