@@ -1,10 +1,10 @@
 package com.hanadkubat.kuvalefitness.Fragments;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -71,9 +71,18 @@ public class BMIFragment extends Fragment implements SeekBar.OnSeekBarChangeList
         loadData();
         updateScreen();
 
+
         return view;
     }
 
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+
+        getActivity().setTitle(R.string.title_bmi_fragment);
+    }
 
     private void updateScreen()
     {
@@ -102,7 +111,6 @@ public class BMIFragment extends Fragment implements SeekBar.OnSeekBarChangeList
             txtBMIIndex.setText("---");
     }
 
-
     private void saveData()
     {
         try
@@ -125,7 +133,6 @@ public class BMIFragment extends Fragment implements SeekBar.OnSeekBarChangeList
             e.printStackTrace();
         }
     }
-
 
     private void loadData()
     {

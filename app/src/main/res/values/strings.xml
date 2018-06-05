@@ -4,4 +4,45 @@
     <!-- bmi fragment -->
     <string name="label_weight">Weight: %s KG</string>
     <string name="label_height">Height: %s cm</string>
+
+    <!-- fragment titles -->
+    <string name="title_bmi_fragment">BMI Calculator</string>
+    <string name="title_workout_logger_fragment">Workout Log</string>
+    <string name="title_edit_workout_log">Edit Workout Log</string>
+
+
+    <!-- exercises -->
+    <string name="exercise_bench">Bench Press</string>
+    <string name="exercise_overhead">Overhead Press</string>
+    <string name="exercise_squat">Squat</string>
+    <string name="exercise_deadlift">Deadlift</string>
+    <string name="exercise_rows">Bentover Row</string>
+    <string name="exercise_tricep_extension">Tricep Extension</string>
+
+    <!-- dialog buttons -->
+    <string name="button_add">Add</string>
+    <string name="button_ok">OK</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_cancel">Cancel</string>
+
+    <!-- workout logger fragment -->
+    <string name="title_add_workout">Add Workout</string>
+    <string name="title_delete_workout">Delete Workout</string>
+    <string name="title_rename_workout">Rename Workout</string>
+    <string name="hint_workout_name">Workout Name (Optional)</string>
+    <string name="message_delete_workout">Are you sure you want to delete this workout ?</string>
+
+    <!-- edit workout log fragment -->
+    <string name="label_exercise_details">%d sets x %d reps x %.2f kgs</string>
+    <string name="title_exercise_details">Exercise Details</string>
+    <string name="title_edit_exercise_details">Edit Exercise Details</string>
+    <string name="title_select_exercise">Select Exercise</string>
+    <string name="title_edit_exercise">Edit Exercise Details</string>
+    <string name="title_delete_exercise">Delete Exercise</string>
+    <string name="message_delete_exercise">Are you sure you want to delete this exercise from workout ?</string>
+
+    <!-- add exercise dialog -->
+    <string name="label_exercise_sets">Sets:</string>
+    <string name="label_exercise_reps">Reps:</string>
+    <string name="label_exercise_weight">Weight (kgs):</string>
 </resources>
