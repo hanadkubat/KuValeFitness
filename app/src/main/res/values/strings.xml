@@ -9,6 +9,7 @@
     <string name="title_bmi_fragment">BMI Calculator</string>
     <string name="title_workout_logger_fragment">Workout Logger</string>
     <string name="title_edit_workout_log">Edit Workout Log</string>
+    <string name="title_welcome">Welcome</string>
 
 
     <!-- exercises -->
@@ -51,4 +52,9 @@
     <string name="title_find_gym">Find Gym</string>
     <string name="error_cant_locate">Unable to find your location. Try again.</string>
     <string name="error_no_maps">You do not have Google Maps installed</string>
+
+
+    <!-- welcome framgment -->
+    <string name="label_welcome">Welcome</string>
+    <string name="label_about">Developed by:\n\nHanad Kubat\nValentin Stjepić-Ćosić\n\n\n\nBurch University 2018</string>
 </resources>

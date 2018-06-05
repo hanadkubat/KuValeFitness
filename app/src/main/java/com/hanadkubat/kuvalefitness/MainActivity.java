@@ -4,8 +4,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.StringRes;
@@ -26,15 +24,11 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.hanadkubat.kuvalefitness.Database.Database;
-import com.hanadkubat.kuvalefitness.Database.Entities.Exercise;
 import com.hanadkubat.kuvalefitness.Database.Entities.Workout;
 import com.hanadkubat.kuvalefitness.Fragments.BMIFragment;
 import com.hanadkubat.kuvalefitness.Fragments.EditWorkoutFragment;
+import com.hanadkubat.kuvalefitness.Fragments.WelcomeFragment;
 import com.hanadkubat.kuvalefitness.Fragments.WorkoutLoggerFragment;
-
-import java.security.Permission;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
@@ -62,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         locationProvider = LocationServices.getFusedLocationProviderClient(this);
 
-        showBmiFragment();
+        showWelcomeFragment();
     }
 
 
@@ -81,7 +75,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item)
     {
-        if(item.getItemId() == R.id.itemBmi)
+        if(item.getItemId() == R.id.itemWelcome)
+            showWelcomeFragment();
+        else if(item.getItemId() == R.id.itemBmi)
             showBmiFragment();
         else if(item.getItemId() == R.id.itemWorkoutLogger)
             showWorkoutLoggerFragment();
@@ -92,6 +88,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.closeDrawers();
 
         return true;
+    }
+
+
+    private void showWelcomeFragment()
+    {
+        Fragment fragment = new WelcomeFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, fragment).commit();
     }
 
 
