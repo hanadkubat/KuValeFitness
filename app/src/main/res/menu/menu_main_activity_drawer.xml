@@ -7,5 +7,8 @@
         <item
             android:id="@+id/itemWorkoutLogger"
             android:title="@string/title_workout_logger_fragment" />
+        <item
+            android:id="@+id/itemFindGym"
+            android:title="@string/title_find_gym"/>
     </group>
 </menu>

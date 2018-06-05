@@ -7,7 +7,7 @@
 
     <!-- fragment titles -->
     <string name="title_bmi_fragment">BMI Calculator</string>
-    <string name="title_workout_logger_fragment">Workout Log</string>
+    <string name="title_workout_logger_fragment">Workout Logger</string>
     <string name="title_edit_workout_log">Edit Workout Log</string>
 
 
@@ -45,4 +45,10 @@
     <string name="label_exercise_sets">Sets:</string>
     <string name="label_exercise_reps">Reps:</string>
     <string name="label_exercise_weight">Weight (kgs):</string>
+
+
+    <!-- find gym -->
+    <string name="title_find_gym">Find Gym</string>
+    <string name="error_cant_locate">Unable to find your location. Try again.</string>
+    <string name="error_no_maps">You do not have Google Maps installed</string>
 </resources>
